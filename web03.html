@@ -1,96 +1,62 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <title>Web03</title>
-    <link rel="stylesheet" href="mystyle.css">
+  <meta charset="utf-8">
+  <title>HTML Forms</title>
+    <style>
+        .myDiv {
+        width: 380px;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid black;
+        }
+        
+        .tablestyle {
+        padding-left: 10px;
+        }
+
+        .scroll-box {
+            width: 360px;
+            height: 180px;
+            overflow: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .scroll-box1 {
+            width: 150px;
+            height: 80px;
+            overflow: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        </style>
 </head>
-
 <body>
-    <div class="mycontainer">
-        <div class="myHeader">
-            <div class="circle">
-                <p>Logo</p>
-            </div>
-            <div class="nav-link">
-                <a href="#">Home</a>
-                <a href="#">Services</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </div>
-        </div>
-        <div class="hero">
-            <p>Hero (Image, Slogan, Kontak, dll)</p>
-        </div>
-        <div class="service">
-            <div class="services-section">
-                <div class="shape">
-                    <p>Service</p>
-                </div>
-                <div class="cardHold">
-                    <div class="card1">
-                        <h2>Heading</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
-                    </div>
-                    <div class="card1">
-                        <h2>Heading</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
-                    </div>
-                    <div class="card1">
-                        <h2>Heading</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="about">
-            <div class="services-section">
-                <div class="aboutShape">
-                    <p>About</p>
-                </div>
-                <div class="desc">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
-                </div>
-                <div class="cardHold1">
-                    <div class="card2">
-                        <h2>Heading</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
-                    </div>
-                    <div class="card2">
-                        <h2>Performance</h2>
-                        <div class="wave-box">
-                            <svg viewBox="0 0 500 150" preserveAspectRatio="none">
-                                <path d="M 5,35 Q 130,95 255,35 T 495,35 L 495,115 Q 370,55 245,115 T 5,115 Z"
-                                    fill="#ffffff" stroke="#000000" stroke-width="5" stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="contact-section">
-            <div class="contact-badge">
-                Contact
-            </div>
 
-            <div class="contact-wrapper">
-                <div class="input-group">
-                    <div class="box-input"></div>
-                    <div class="box-input"></div>
-                </div>
-
-                <div class="box-textarea"></div>
-
-                <div class="btn-kirim">
-                    Kirim
-                </div>
-            </div>
-        </div>
+<div class="myDiv">
+    <div class="scroll-box">
+        <table class="tablestyle">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" id="fname" style="width: 200px;" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" id="email" style="width: 250px;" placeholder="Enter your email"></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><textarea type="text" id="address" style="height: 80px;" placeholder="Enter your address" class="scroll-box1"></textarea></td>
+            </tr>
+            <tr>
+                <td>Postcode:</td>
+                <td><input type="text" id="postcode" placeholder="Enter your postcode" style="width: 130px;"></td>
+            </tr>
+        </table>
     </div>
-    <div class="footer">
-    Footer
-  </div>
-</body>
+</div>
 
+</body>
 </html>
+
